@@ -16,7 +16,7 @@ public class PentagonCrazy {
 		//  Put the robot's pen down
 eleanor.penDown(); 
 		//  SPEED. Make the robot go at maximum speed (100)
-eleanor.setSpeed(100);
+eleanor.setSpeed(10000);
 		//  COLOR. Set the pen to a color that you like for the shape
 eleanor.setPenColor(Color.PINK);
 		//  NUMBER OF SIDES. Make an int variable for the number of sides the shape will have.
@@ -29,7 +29,7 @@ int github = 5;
 		//         Set its start value to zero.
 		//  LOOP. Start a while loop to repeat the DRAW, TURN, and INCREASE COUNT code 200 times. 
 		int count = 0;
-		while(count<200){
+		while(count<1000){
 
 			eleanor.move(count);
 			eleanor.turn(liam+1);
