@@ -10,16 +10,32 @@ public class FlamingNinjaStar {
 		int flameSize = 130;		//the length of the flaming arms
 		
 		// Make a new robot, and set it's pen down.
-
+	Robot chantal = new Robot();
+	chantal.penDown();
 		// Set the robot speed to 100
-		
+	chantal.setSpeed(100);
+	
 		// Set the robot window size to 800 x 800
-
+	chantal.setWindowSize(800, 800);
 		//  COUNT. Make another int variable to count how many times the loop has repeated
 		//         Set its start value to zero.
-		
+		int devin = 0;
 	       //  LOOP. Start a while loop to repeat all of the code below ONE time (we will change this later)
-
+			while(devin<25) {
+				chantal.setPenColor(Color.red);
+				chantal.turn(45);
+				chantal.move(64);
+				chantal.setPenColor(Color.pink);
+				chantal.turn(-40);
+				chantal.move(flameSize);
+				chantal.turn(170);
+				chantal.move(flameSize);
+				chantal.setPenColor(Color.red);
+				chantal.turn(64);
+				chantal.move(baseSize);
+				devin += 1;
+			}
+				
 			   // TURN RIGHT     Turn the robot 1/8 of a circle (hint: 360 degrees will turn a full circle)
 		
 			   // MOVE           Move the robot 64 pixels
@@ -45,6 +61,7 @@ public class FlamingNinjaStar {
 		
 		// COLOR  Change the Robot's pen color so that the flame is a different color to the rest of the star.
 		//        Run the program again. Check the second picture in the recipe.
+			chantal.setPenColor(Color.pink);
 
 		// LOOP   When you have one arm looking right, change your loop to repeat 25 times and run the program.
 		
