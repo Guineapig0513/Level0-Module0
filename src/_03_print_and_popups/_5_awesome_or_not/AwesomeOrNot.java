@@ -2,12 +2,34 @@ package _03_print_and_popups._5_awesome_or_not;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class AwesomeOrNot {
 
 	// 1. Make a main method that includes everything below
 
-	
+	public static void main(String[] args) {
 		Random ran = new Random();    //This will be used below to make a random number. 
+		int potato = 0;
+		potato = ran.nextInt(4);
+		System.out.println(potato);
+		String awesome = JOptionPane.showInputDialog("What is something awesome? (make it plural)");
+		if(potato==(0)){
+			JOptionPane.showMessageDialog(null, awesome +  " are awesome!");
+		}
+		else if(potato==(1)) {
+			JOptionPane.showMessageDialog(null, awesome + " are ok...");
+		}
+		else if(potato==(2)) {
+			JOptionPane.showMessageDialog(null, awesome + " are BORING...");
+		}
+		else if(potato==(3)) {
+			JOptionPane.showMessageDialog(null, awesome + " are cool,awesome,amazing,magnifcient, and splendid");
+		}
+		
+		
+	}
+		
 		
 		// 2. Make a variable that will hold a random whole number
 	

@@ -8,7 +8,7 @@ public class QuizGame {
 		// Create a variable to hold the user's score. Set it equal to zero. 
 		int score = 0;
 		
-		String spain = JOptionPane.showInputDialog("What is the capital of Spain?");
+		
 		if(spain.equals("Madrid")) {
 		JOptionPane.showMessageDialog(null,  "Correct :D");
 		score += 1;
@@ -26,8 +26,9 @@ public class QuizGame {
 		if(pig.equals("Yes")) {
 		JOptionPane.showMessageDialog(null,  "Correct :D");
 		score += 1;
-		}else if(pig.equals("ugly")){
-			JOptionPane.showMessageDialog(null,  "You're a Moron -John Martson");
+		else if(pig.equals("Ugly")) {
+			JOptionPane.showMessageDialog(null, "You're a MORON-John Martson");
+		}
 			score -= 1000000000;
 		}
 		else {score -= 1;
