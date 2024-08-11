@@ -29,6 +29,8 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 	BufferedImage maze;
 	final int frameWidth = 500;
 	final int frameHeight = 500;
+	int startColor=-65536;
+	int background =-16777216;
 
 	ScaryMaze() throws Exception {
 		
@@ -61,7 +63,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		//5.  Run your program and move your mouse over the START COLOR. A number will be printed to the console
 		
 		
-		int startColor=5570816;
+		
 		//6. Change the value of this startColor variable to the number printed in the previous step. 
 		
 		
@@ -74,7 +76,7 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		
 		//7. Make a new int variable for the background color of the maze
 
-		int background = 16777216;
+		
 		//8. Run the program and move the mouse over the BACKGROUND COLOR. 
 		//   Use the number that is printed to the console to set the background color variable 
 
@@ -99,14 +101,14 @@ public class ScaryMaze extends JPanel implements Runnable, MouseMotionListener {
 		//Scare your player with scary messages, sounds and pictures
 		
 		System.out.println("BOO!");
-		
+		showScaryImage("scary woman.png");
 		if (canPlaySounds) {
 
 			/**********  PLAY A SOUND ***************/
 			//10. Find a scary sound and put it in the _04_amazing_games._1_scary_maze package (where you put your maze picture). 
 			//    You can find a sound on freesound.org. Log in as leagueofamazing/code4life.		
 			//11. Play the scary sound. Hint: use the playScarySound method with the name of your sound file		
-playScarySound("scaryyy.wav");
+				playScarySound("scary_noise.wav");
 			
 		}	
 		/**********  SHOW A PICTURE ***************/
