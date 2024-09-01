@@ -41,7 +41,7 @@ public class DragonFight {
 			// or a kick
 
 			// 4. If they typed in "yell":
-			if (input.equals("yell")) {
+			if (input.equalsIgnoreCase("yell")) {
 
 				// -- Find a random number between 0 and 10 and store it in playerAttack. Use
 				playerAttack = ran.nextInt(10);
@@ -50,20 +50,14 @@ public class DragonFight {
 				}
 			}
 			// 5. If they typed in "kick":
-			if (input.equals("kick")) {
+			if (input.equalsIgnoreCase("kick")) {
 				playerAttack = ran.nextInt(25);
 //	if (playerAttack == 0) {
 //		JOptionPane.showMessageDialog(null, "You did " + playerAttack + " damage because you missed D:");
 //	}
 
 			}
-			if (input.equals("kick")) {
-				playerAttack = ran.nextInt(25);
-//	if (playerAttack == 25) {
-//		JOptionPane.showMessageDialog(null, "You did " + playerAttack + " damage it was very effective");
-//	}
 
-			}
 			// -- Find a random number between 0 and 25 and store it in playerAttack.
 
 			// 6. Subtract the player attack value from the dragon's health
